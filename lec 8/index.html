@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Array and Object</h1>
+    <script>
+        let name = ["saira", "amna", "namal"]
+        console.log(name[2])
+        console.log(name[0])
+
+        name.push(" sara")
+        name.push(" aiman")
+        name.push(" huram")
+
+
+        console.log(name)
+        name.pop()
+        console.log(name)
+
+        name.unshift("namal")
+        name.shift()
+        console.log(name)
+        console.log(name.length)
+        console.log(name.indexOf("saira"))
+
+        const sayHello = () => {
+             console.log("hihello")
+        }
+        sayHello()
+        function sayFunc2(func)  {
+               func()
+        }
+        // callback function
+        sayFunc2(()  => {
+            console.log("i am from arrow function")
+        })
+        
+        let friendNames = ["saira", "amna", "namal"]
+        friendNames.map((nm)  => {
+             if (nm.includes("sara"))
+                  console.log(nm)
+        })
+
+        let ages = [ 1,4,5,6,10,34,13]
+
+        ages.map((ag) => {
+            if (ag > 18)  {
+                  console.log(ag)
+            }
+        })  
+
+        let eligibelages = ages.filter((ag) => {
+            if (ag >= 18) {
+                return ag
+            }
+        })        
+    
+        console.log(eligibelages)
+
+        const person = {
+            name: "saira imran",
+            city: "lahore",
+            zipcode: 54000,
+        }
+        console.log(person.zipcode)
+        console.log(person.city)
+
+        const car = {
+            name: "bmw",
+            speed: "0-60 mph in 2.9 sec",
+            price: 700000,
+
+        }
+        console.log(car.name)
+        const bike = {
+            name: "Honda",
+            model: "C ",
+        }
+
+        car.model = "city"
+        car.manuyear = "2025"
+        console.log(bike)
+
+        const bikelist = [{
+            name: "Honda city",
+            year: 2025
+        },
+            {
+            name: " yamah",
+            year: 2024
+        },
+        ]
+        console.log(bikelist)
+
+         
+    </script>
+</body>
+</html>
