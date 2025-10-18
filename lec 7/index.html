@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Logical</h1>
+    <script>
+        let age = 18
+        let hasliscence = false
+        if (age >= 16 && hasliscence) {
+            console.log("you can a drive a car!🚕 ")
+        } else {
+            console.log("you cannot drive yet😎")
+        }
+        let isBirthday = false
+        let gotGoodGrades = true
+
+        if (isBirthday || gotGoodGrades) {
+            console.log(" you can have icecream!🍨")
+        } else {
+            console.log("No icecream today😊")
+        }
+        let isweekend = true
+        if (!isweekend) {
+            console.log(" it is a school day!🏫")
+        } else {
+            console.log("it is weekend !🏫")
+        }
+        function sayHello() {
+            console.log("hi saira")
+        }
+
+        sayHello();
+        function calculatebmi(weight, height) {
+            // function parameter
+            
+            let bmi = weight / height ** 2
+            return bmi
+        }
+        // function arguments
+        let bmi = calculatebmi(75, 1.62)
+        alert(bmi)
+
+        function calculatePercentage(obtainedMarks, totalMarks) {
+            // function parameter
+            let percentage = (obtainedMarks / totalMarks) * 100;
+            console.log("percentage");
+        }
+
+        // Function arguments
+        calculatePercentage(430, 500);
+
+
+        function checkEligibility() {
+            let base = prompt(" enter your base")
+            let height = prompt(" enter your height")
+            base = Number(base)
+            height = Number(height)
+
+            area = 0.5 * base * height
+            if (area > 100) {
+                return true
+            } else {
+                return false
+            }
+        }
+        let mineEligible = checkEligibility()
+        console.log(area)
+
+
+        function checkLogin() {
+
+            let email = prompt("Enter your email")
+            let password = prompt("Enter your password")
+
+
+            let correctEmail = "aimanfatima@.com";
+            let correctPassword = "12345";
+
+
+            if (email == correctEmail && password == correctPassword) {
+                return true
+            } else {
+                return false
+            }
+        }
+
+        let result = checkLogin()
+        console.log(result)
+
+    </script>
+</body>
+
+</html>
