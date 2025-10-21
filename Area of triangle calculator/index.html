@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Area of triangle</h1>
+    <form onsubmit="calculateArea(); return false">
+
+      <input type="number"  id="base" placeholder="Enter base">
+      <input type="number" id="height" placeholder="Enter height">
+
+      <button type="submit">Calculate</button>
+    </form>
+
+    <div id="result"></div>
+
+    <script>
+        function calculateArea() {
+        const baseRef =document.getElementById("base");
+        const heightRef =document.getElementById("height");
+
+         const base =Number(baseRef.value);
+          const height =Number(heightRef.value);
+
+          const area = 1/2 * base * height
+           console.log(area)
+           const resultDiv=document.getElementById("result")
+        resultDiv.innerText=`your are is $(area)`
+        }
+        </script>
+</body>
+</html>   
+        

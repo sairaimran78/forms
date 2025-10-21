@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Area of Rectangle</h1>
+    <form onsubmit="calculateArea(); return false">
+
+    <input type="number" id="length" placeholder="Enter length">
+    <input type="number" id="width" placeholder="Enter width">
+
+    <button type="submit">Calculate</button>
+  </form>
+
+  <div id="result"></div>
+
+  <script>
+    function calculateArea() {
+        const lengthRef= document.getElementById("length")
+        const widthRef= document.getElementById("width")
+
+        const length = Number(lengthRef.value);
+        const width = Number(widthRef.value);
+
+        const area = 2 *(length+width)
+        console.log(area)
+        const resultDiv=document.getElementById("result")
+        resultDiv.innerText=`your are is $(area)`
+        }
+        </script>
+</body>
+</html>  
