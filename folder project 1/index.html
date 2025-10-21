@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calculate Bmi</h1>
+    <form onsubmit="calculateBmi(); return false">
+        
+        <input type="number" id="height"
+        placeholder="Enter height"/>
+        <input type="number" id="weight"
+        placeholder="Enter weight"/>
+        
+        <button type="submit">Save</button>
+    </form>
+    <div id="result"></div>
+
+    <script>
+        function  calculateBmi () {
+            const heightRef =document.getElementById("height");
+            const weightRef =document.getElementById("weight");
+
+            const height =Number(heightRef.value);
+            const weight =Number(weightRef.value);
+
+            const heightInMeter = height / 100;
+            const bmi = weight / (heightInMeter ** 2);
+
+            const resultDiv = document.getElementById("result");
+            resultDiv.innerText=`your Bmi is ${bmi.toFixed(2)}`;
+        }
+    </script>
+</body>
+</html>        
+   
