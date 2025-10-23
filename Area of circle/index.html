@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>area of circle</h1>
+       <form onsubmit="calculateArea(); return false">
+
+       <input type="number" id="radius" placeholder="Enter radius">
+
+       <button type="submit">Calculate</button>
+       </form>
+
+       <div id="result"></div>
+         
+       <script>
+          function calculateArea() {
+             const radiusRef= document.getElementById("radius")
+
+              const radius = Number(radiusRef.value);  
+              
+              const area = 3.1416 * radius * radius
+              console.log(area)
+               const resultDiv=document.getElementById("result")
+               resultDiv.innerText = `your are is $(area)`   
+          }
+       </script>
+</body>
+</html>                
+              
