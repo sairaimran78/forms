@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>birthday calculator</h1>
+  <form onsubmit="calculateage(); return false">
+
+    <input type="date" id="birthdate" placeholder="Enter birth date">
+    <input type="date" id="currentdate" placeholder="Enter current date">
+
+    <button type="submit">Calculate</button>
+       </form>
+
+       <div id="result"></div>
+       <script>
+        function calculateage() {
+        const birthdateRef =document.getElementById("birthdate")
+        const currentdateRef =document.getElementById("currentdate")
+
+        const birthdate =new Date (birthdateRef.value)
+        const currentdate =new Date (currentdateRef.value)
+
+        const diff = currentdate - birthdate
+
+        const age = Math.floor(diff / (1000 * 60 * 60 * 24 * 365))
+
+        console.log(age)
+        const resultDiv=document.getElementById ("result")
+        resultDiv.innerText=`your age is ${age}`
+        }
+        </script>
+</body>
+</html>    
