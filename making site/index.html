@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeeshan Ali - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+    
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0d1117; /* Dark background */
+        }
+
+        .navbar {
+            background-color: black;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 40px;
+            box-sizing: border-box;
+        }
+
+        .navbar h1 {
+            color: aqua;
+            font-size: 30px;
+    
+        }
+
+        .navbar header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .navbar header h5 {
+            color: grey;
+            font-size: 16px;
+        
+        }
+        .p{
+            display: flex;
+            background-color: blue;
+        }
+
+        .cta-container {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .language-switcher span {
+            color: beige;
+            font-size: 14px;
+        }
+         .contact-btn {
+
+            color: aliceblue;
+            border-radius: 5px;
+            background-color:blue;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+        }
+        .contact-btn:hover{
+            cursor: pointer;
+            background-color: aqua;
+        }
+
+
+        
+        .hero-section {
+            background-color:#0b0f14; 
+            color: white;
+            padding: 100px 100px;
+            min-height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            position: relative;
+            overflow: hidden;
+    
+        }
+
+        .hero-content {
+            flex: 1; 
+            max-width: 55%; 
+            z-index: 10;
+            text-align: left; 
+        }
+
+        .hero-content p:first-child {
+            color: lightgray;
+            font-size: 18px;
+            margin-bottom: 5px;
+            display: flex;
+            background-color: blue;
+            height: fit-content;
+            width: 20;
+        }
+        .hero-content h2 {
+            font-size: 72px;
+            font-weight: 700;
+             margin: 0;
+            line-height: 1;
+        }
+        
+        .hero-content .name-blue {
+            color: aquamarine;
+            /* *MAIN FIX:* display: block; isse yeh nayi line mein chala jayega */
+            display: block; 
+            font-size: 72px;
+            margin-top: 10px;
+        }
+
+        .hero-content .hello-im {
+            /* 'Hello, I'm' ka size kam kiya jaisa image mein hai */
+            font-size: 60px; 
+            font-weight: 700;
+        }
+
+        .hero-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display:
+            gap: 15px;
+        }
+
+        .hero-buttons button {
+            padding: 12px 30px;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+        }
+
+        .discover-btn {
+            background-color: #38bdf8;
+            color: white;
+        }
+
+        .contact-me-btn { 
+            background-color: aqua;
+            color: white;
+            border: 1px solid white;
+        }
+
+        .social-icons {
+            margin-top: 30px;
+            display: flex;
+            gap: 30px;
+        }
+
+        .hero-visuals {
+            position: absolute;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            width: 45%;
+            height: auto; 
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
+        .main-image-container {
+            width: 80%; 
+            height: 400px;
+            overflow: hidden;
+            background-color: #111; 
+        }
+
+        .main-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        .profile-pic-circle {
+            position: absolute;
+            left: 10%; 
+            top: 40%;
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 5px solid #38bdf8;
+            box-shadow: 20px gray;
+            z-index: 20;
+        }
+        .profile-pic-circle img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <h1>Zeeshan Ali </h1>
+        <header>
+            <h5>Home</h5>
+            <h5>About</h5>
+            <h5>Experience</h5>
+            <h5>Tutorials</h5>
+            <h5>Books</h5>
+            <h5>Blogs</h5>
+            <h5>Repos</h5>
+            <h5>contact</h5>
+        </header>
+
+        <div class="cta-container">
+            <div class="language-switcher">
+                <img src="https://flagcdn.com/w20/us.png" alt="English Flag">
+                <span>EN</span>
+                <img src="https://flagcdn.com/w20/pk.png" alt="Pakistan Flag">
+                <span>UR</span>
+                <img src="https://flagcdn.com/w20/sa.png" alt="Saudi Flag">
+                <span>AR</span>
+            </div>
+            <button class="contact-btn nav-btn">Get In Touch</button>
+        </div>
+    </div>
+
+    <div class="hero-section">
+        <div class="hero-content"> 
+            <p>Practical Technologist & Project Lead</p>
+            
+            <h2>
+                <span class="hello-im">Hello, I'm</span> 
+                <span class="name-blue">Zeeshan Ali</span>
+            </h2>
+
+            <p>
+                Practical Technologist & Project Lead @ P2P Clouds | Instructor @ NeXskill, Ideoversity | Specializing in AI, Blockchain, Cloud Computing, Machine Learning, Deep Learning, Generative AI, NLP, AI Agents, Smart Contracts, DApps | International experience across Pakistan, USA, and Middle East
+            </p>
+            <div class="hero-buttons">
+                <button class="discover-btn">Discover More</button>
+                <button class="contact-me-btn">Contact Me</button>
+            </div>
+            <div class="social-icons">
+                <a href="https://github.com/zeeshanali90233" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/zeeshan-ali-dev" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:zeeshanali90233@gmail.com" title="Email"><i class="fas fa-envelope"></i></a>
+                <a href="https://youtube.com/@learnwithaliengineer?si=UFeWZ36-vM6WrAC6" title="YouTube"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/zeeshan_ali_eng/" title="Instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://medium.com/@zeeshanali90233" title="Medium"><i class="fab fa-medium"></i></a>
+            </div>
+        </div>
+        
+        <div class="hero-visuals">
+            <div class="profile-pic-circle">
+                <img src="https://zeeshan.p2pclouds.net/my/zeeshan-ali-profile-picture.webp" alt="Zeeshana Ali" >
+            </div>
+            
+            <div class="main-image-container">
+                <video class="main-image" src="https://zeeshan.p2pclouds.net/videos/zeeshan-ali-introduction-video.mp4"alt="zeeshan-ali-introduction-video" autoplay muted loop></video>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
