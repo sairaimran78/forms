@@ -1,0 +1,51 @@
+.container {
+   width: 100%;  
+   height: 100vh;
+   background-color: antiquewhite;
+}
+
+@media print {
+    .container {
+        background-color: red;
+        color: red;
+    }
+}
+
+ @media screen and (max-width: 769px) {
+    .container {
+       background-color: blue; 
+    }
+ }
+
+
+ @media  screen and (min-width:1000px) {
+    h1{
+        display: none;
+    }
+ }
+
+ /* Tables or laptop */
+ @media screen and (min-width:769px) and (max-width:1279px) {
+    .container{
+        font-size: larger;
+        font-weight: bolder;
+    }
+ }
+
+ .container {
+    animation: colorchanging 2s 0s infinite;
+ }
+    
+
+ @keyframes colorchanging {
+    from {
+        background-color: darkcyan;
+    }
+    to {
+        background-color: palevioletred;
+    }
+ }
+    
+ 
+    
+ 
