@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            width: 100%;
+            height: 400px;
+            background-color:antiquewhite;
+            display:flex;
+
+            /* horizontal movement*/
+            justify-content: flex-start;
+            /* vertical  movement */
+            align-items:  flex-start;
+            flex-wrap: wrap;
+            
+
+        } 
+        .box{
+            width: 200px;
+            height: 200px;
+        }
+
+.pink{
+    background-color: pink;
+}
+.coral{
+    background-color: coral;
+}
+.teal{
+    background-color: teal;
+}
+  .btn{
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color-scheme: white;
+  }
+     .btn.hover{
+        background-color: palevioletred;
+        cursor: pointer;
+     }
+    </style>
+</head>
+<body>
+    <h1>Display Model -- flex</h1>
+
+    <div class="container">
+        <div class="box pink"></div>
+        <div class="box coral "></div>
+        <div class="box teal"></div>
+    </div>
+    
+     
+</body>
+</html>
